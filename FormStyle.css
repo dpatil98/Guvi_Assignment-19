@@ -1,0 +1,213 @@
+body{
+    font-family: 'Kalam', cursive;
+    background-color: rgb(75, 75, 75);
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+.container-fluid {
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+ 
+}
+
+/*---------------------------- Form Starts from here---------------------------------- */
+
+ .bi{    /* Pen Logo */
+    cursor: pointer;
+}
+
+/* paperbackground */
+.form{
+    /* background-image: url('https://www.loriswebs.com/images/texture-images/smudge-v-pale-blue.gif'); */
+    /* background-image: url('https://i.pinimg.com/originals/2a/66/b7/2a66b7151e30f47e3c4f430c25902a41.jpg'); */
+    background-image: url('https://www.loriswebs.com/images/texture-images/whitepapertexture.gif');
+    background-repeat: repeat;
+
+    border-radius: 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 6px 0px;
+
+
+    overflow: hidden;
+    padding: 20px;
+ 
+
+}
+
+
+.form label{
+
+    letter-spacing:  1px;
+    text-shadow: 1px 0px 3px rgb(169, 192, 255);
+    color: darkblue;
+    outline: 3px;
+    font-weight: 600;
+}
+
+
+
+.form input, .form div{
+
+    padding-left: 7px;
+    border: none;
+    border-bottom: 2px solid rgb(78, 26, 175);
+    outline: none;
+    border-radius: 9px 3px;
+    background: none;
+    opacity: 0.9;
+    
+}
+
+
+.form div{
+
+    padding: 2px 0;
+    border-bottom: 2px solid rgb(89, 109, 221);
+    border-radius: 2px;
+
+   
+}
+
+.form input[type="checkbox"] ,.form input[type="radio"]{
+
+    
+    margin: 7px 20px 7px 40px;
+    /* position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; */
+
+}
+.form input[type="submit"] 
+{
+    background: none;
+    /* background-image: url('https://png2.cleanpng.com/sh/398727e681d904a4a5d1bb5bd46aabe7/L0KzQYm3VMAzN5Zsj5H0aYP2gLBuTfRwd5VxfZ9tcnH6ebBuTfNtcaEyeeR9LXPvcci0kBNzaaVogJ8AYXO1R4a8VPUzamM2TpCDNEC3RYS3VcE2OmM7UaU9NkC8Qom9TwBvbz==/kisspng-doodle-drawing-clip-art-claw-scratch-5ac27554e2b216.8404530515226934609286.png'); */
+    background-image: url('https://www.pngkit.com/png/full/18-188204_free-download-arrow-silhouette-png.png');
+    background-size: 80px 60px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    border: none;
+    text-shadow: 1px 0px 4px rgb(148, 148, 148);
+    padding: 15px;
+
+}
+
+
+
+/*--------------------------Form Ends here-------------------------------------------------------------*/
+
+
+.tableContainer {
+
+    background-image: url('https://www.loriswebs.com/images/texture-images/whitepapertexture.gif');
+    margin: 50px 0px;
+    padding:20px; 
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 6px 0px;
+    
+   
+}
+
+
+tr, td,th {
+
+    border: 3px solid rgb(89, 88, 88);
+    border-collapse: collapse;
+    
+    
+   }
+
+
+/* .tableContainer div{
+
+    margin: 0;
+    padding: 0;
+    border-top: 1px rgb(68, 68, 68) solid ;
+    border-bottom: 1px rgb(95, 95, 95) solid ;
+    border-left: 2px rgb(95, 95, 95) solid ;
+    border-right: 2px rgb(95, 95, 95) solid ;
+    
+   
+    
+} */
+
+/* -----------pen colors ------------------*/
+
+.blue{
+    text-shadow: 1px 0px 4px rgb(169, 192, 255);
+    color: rgb(1, 19, 181);
+   
+}
+
+.red{
+    
+    text-shadow: 1px 0px 4px rgb(252, 186, 186);
+    color: rgb(197, 38, 38);
+}
+
+.black{
+    text-shadow: 1px 0px 2px rgb(148, 148, 148);
+    color: rgb(63, 62, 62);
+}
+
+
+
+/*------------- for responsive table---------------------------------- */
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	th  { 
+		position: absolute;
+	    top: -9999px;
+		left: -9999px;
+	} 
+	
+	tr { border: 1px solid rgb(41, 41, 41); }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid rgb(61, 61, 61); 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+        
+        text-shadow: 1px 0px 2px rgb(148, 148, 148);
+        color: rgb(63, 62, 62);
+        
+        
+	}
+	
+	td:nth-of-type(1):before { content: "First Name :"; }
+	td:nth-of-type(2):before { content: "Last Name :"; }
+	td:nth-of-type(3):before { content: "Address :"; }
+	td:nth-of-type(4):before { content: "Pincode :"; }
+	td:nth-of-type(5):before { content: "Gender :"; }
+	td:nth-of-type(6):before { content: "Food :"; }
+	td:nth-of-type(7):before { content: "State :"; }
+	td:nth-of-type(8):before { content: "Country :"; }
+}
